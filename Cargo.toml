@@ -1,0 +1,17 @@
+[package]
+name = "dapp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+diesel = { version = "2", features = ["sqlite", "r2d2"] }
+serde = { version = "1.0.137", features = ["derive"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+tokio-pg-mapper = "0.2.0"
+tokio-pg-mapper-derive = "0.2.0"
+tokio-postgres = "0.7.6"
+config = "0.13"
+deadpool-postgres = { version = "0.12", features = ["serde"] }
